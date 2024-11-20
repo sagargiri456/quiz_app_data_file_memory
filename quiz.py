@@ -13,12 +13,13 @@ def load_quiz_data():
         print("Quiz data file not found!")
         return {}
 
-
+######################## SAGAR SAKSHAM GIRI #################################
 def save_quiz_data(data):
     """Save quiz data to a file."""
     with open("quiz_data.json", "w") as file:
         json.dump(data, file, indent=4)
 
+######################## SAGAR SAKSHAM GIRI #################################
 
 def register():
     name = input("Enter a username: ")
@@ -40,6 +41,7 @@ def login():
     print("Invalid username or password!")
     return None
 
+######################## SAGAR SAKSHAM GIRI #################################
 
 def quiz(subject, user, quiz_data):
     print(f"\nStarting {subject} quiz!")
@@ -66,6 +68,7 @@ def quiz(subject, user, quiz_data):
 
     print(f"\n{user}, your score is {score}/5.")
 
+######################## SAGAR SAKSHAM GIRI #################################
 
 def main():
     print("Welcome to the Quiz Application!")
@@ -102,6 +105,7 @@ def main():
             print("Goodbye!")
             break
 
+######################## SAGAR SAKSHAM GIRI #################################
 
 if __name__ == "__main__":
     main()
